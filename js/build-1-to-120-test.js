@@ -48,7 +48,7 @@ function htmlListMathProblems(theArray) {
     }
     theText +=  " = ____";
     while ((15 - theText.length) > 0) {
-        theText += " ";
+        theText += '\xa0';
     }
     let htmlText = document.createTextNode(theText);
     let div = document.createElement( "div" );
