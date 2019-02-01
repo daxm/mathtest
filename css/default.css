@@ -37,7 +37,7 @@ div#test-1-to-120 {
 
 div.math-problem {
   margin: 10px 5px 10px 5px;
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
   min-width: 30%;
   max-width: 49%;
@@ -49,4 +49,5 @@ div.problem {
   width: 24%;
   white-space: nowrap;
   text-align: justify-all;
+  display: inline;
 }
