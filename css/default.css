@@ -36,3 +36,7 @@ h3 {
   font-style: bold;
   font-family: Verdana, Arial, sans-serif;
 }
+
+div.math-problem {
+  margin-left: 5px;
+}

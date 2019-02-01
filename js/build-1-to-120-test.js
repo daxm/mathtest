@@ -41,6 +41,7 @@ function htmlListMathProblems(theArray) {
     let toc = document.getElementById("test-1-to-120");
     let htmlText = document.createTextNode(theArray[0] + " + " + theArray[1] + " = " + theArray[2]);
     let div = document.createElement( "div" );
+    div.classList.add('math-problem');
     div.appendChild(htmlText);
     toc.appendChild(div);
 }
