@@ -47,6 +47,4 @@ div.problem {
   margin: 0 2px 0 2px;
   font-size: 3em;
   white-space: nowrap;
-  display: inline-flex;
-  justify-content: flex-start;
 }
