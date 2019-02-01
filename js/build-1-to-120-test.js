@@ -5,8 +5,9 @@ function build1To120Test() {
     }
 
     while (numberList.length > 0) {
+        let aRandomPosition = 0;
         if (numberList.length > 1) {
-            var aRandomPosition = Math.floor(Math.random() * (numberList.length - 1)) + 1;
+            aRandomPosition = Math.floor(Math.random() * (numberList.length - 1)) + 1;
         }
         else {
             aRandomPosition = 0;
@@ -18,8 +19,15 @@ function build1To120Test() {
 
 function get2NumberSum (theTotal) {
     // What 2 numbers sum to theTotal without using carrying.
-    var aRandomDigit = Math.floor(Math.random() * (10));
-    var theDifference = theTotal - aRandomDigit;
+    let maxNumber = 0;
+    if (theTotal > 10) {
+        maxNumber = 10;
+    }
+    else {
+        maxNumber = theTotal;
+    }
+    let aRandomDigit = Math.floor(Math.random() * (maxNumber));
+    let theDifference = theTotal - aRandomDigit;
     return [aRandomDigit, theDifference]
 }
 
