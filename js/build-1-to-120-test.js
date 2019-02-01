@@ -13,7 +13,8 @@ function build1To120Test() {
             aRandomPosition = 0;
         }
         let aNumber = numberList.splice(aRandomPosition,1);
-        console.log(get2NumberSum(aNumber) + "=" + aNumber);
+        let theSummedNumbers = get2NumberSum(aNumber);
+        console.log(theSummedNumbers)
     }
 }
 
