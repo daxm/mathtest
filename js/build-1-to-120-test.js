@@ -46,10 +46,9 @@ function htmlListMathProblems(theArray) {
     else {
         theText = theArray[0] + " + " + theArray[1];
     }
-    theText +=  " = _____";
-    if (theText.length < 17) {
-        console.log(theText.length);
-        for (let j = 1; j <= (17 - theText); j++) {
+    theText +=  " = ____";
+    if (theText.length < 15) {
+        for (let j = 1; j <= (15 - theText.length); j++) {
             theText += "&nbsp;"
         }
     }
