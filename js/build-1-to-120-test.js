@@ -19,7 +19,7 @@ function build1To120Test() {
 function get2NumberSum (theTotal) {
     // What 2 numbers sum to theTotal without using carrying.
     var aRandomDigit = Math.floor(Math.random() * (10));
-    var theDifference = 10 - aRandomDigit;
+    var theDifference = theTotal - aRandomDigit;
     return [aRandomDigit, theDifference]
 }
 
