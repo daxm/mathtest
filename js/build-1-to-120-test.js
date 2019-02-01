@@ -24,14 +24,14 @@ function build1To120Test() {
 
 function get2NumberSum (theTotal) {
     // What 2 numbers sum to theTotal without using carrying.
-    let maxNumber = 0;
-    if (theTotal > 10) {
-        maxNumber = 10;
-    }
-    else {
-        maxNumber = theTotal;
-    }
-    let aRandomDigit = Math.floor(Math.random() * (maxNumber));
+
+    // Get the 1s digit from theTotal
+    let lastDigit = theTotal % 10;
+
+    // Compute a random number between zero and the lastDigit
+    let aRandomDigit = Math.floor(Math.random() * (lastDigit));
+
+    // Find and return the 2 numbers.
     let theDifference = theTotal - aRandomDigit;
     return [aRandomDigit, theDifference]
 }
