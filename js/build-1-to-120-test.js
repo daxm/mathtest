@@ -51,6 +51,7 @@ function htmlListMathProblems(theArray) {
     let divAnswer = document.createElement( "div" );
     divAnswer.classList.add('problem');
 
+    // Build text parts
     let plusSymbol = "+";
     let plus = document.createTextNode(plusSymbol);
 
@@ -70,10 +71,16 @@ function htmlListMathProblems(theArray) {
 
     let theAnswer = document.createTextNode(" = ____");
 
+    // Associate text to divs
+    divLeft.appendChild(leftNum);
+    divPlus.appendChild(plus);
+    divRight.appendChild(rightNum);
+    divAnswer.appendChild(theAnswer);
+
     // glue them together
-    divMaster.appendChild(leftNum);
-    divMaster.appendChild(plus);
-    divMaster.appendChild(rightNum);
-    divMaster.appendChild(theAnswer);
+    divMaster.appendChild(divLeft);
+    divMaster.appendChild(divPlus);
+    divMaster.appendChild(divRight);
+    divMaster.appendChild(divAnswer);
     toc.appendChild(divMaster);
 }
