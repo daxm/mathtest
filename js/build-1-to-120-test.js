@@ -17,9 +17,8 @@ function build1To120Test() {
             aRandomPosition = 0;
         }
         let aNumber = numberList.splice(aRandomPosition,1);
-        let the3Numbers = get2NumberSum(aNumber);
-        the3Numbers.push(aNumber);
-        htmlListMathProblems(the3Numbers)
+        let theSummedNumbers = get2NumberSum(aNumber);
+        htmlListMathProblems(theSummedNumbers)
     }
 }
 
@@ -39,7 +38,7 @@ function get2NumberSum (theTotal) {
 
 function htmlListMathProblems(theArray) {
     let toc = document.getElementById("test-1-to-120");
-    let htmlText = document.createTextNode(theArray[0] + " + " + theArray[1] + " = " + theArray[2]);
+    let htmlText = document.createTextNode(theArray[0] + " + " + theArray[1] + " = __________");
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
     div.appendChild(htmlText);
