@@ -36,5 +36,5 @@ div.math-problem {
   font-size: xx-large;
   font-weight: bold;
   display: inline-block;
-  text-align: justify;
+  text-align: justify-all;
 }
