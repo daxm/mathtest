@@ -41,5 +41,6 @@ div.math-problem {
   display: inline-flex;
   justify-content: space-around;
   min-width: 24%;
+  max-width: 49%;
   white-space: nowrap;
 }
