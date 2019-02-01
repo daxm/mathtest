@@ -38,7 +38,7 @@ function get2NumberSum (theTotal) {
 
 function htmlListMathProblems(theArray) {
     let toc = document.getElementById("test-1-to-120");
-    let htmlText = document.createTextNode(theArray[0] + " + " + theArray[1] + " = _____");
+    let htmlText = document.createTextNode(theArray[1] + " + " + theArray[0] + " = _____");
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
     div.appendChild(htmlText);
