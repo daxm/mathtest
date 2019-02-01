@@ -22,6 +22,7 @@
 
 <!-- load all our scripts -->
 <script type="text/javascript" src="default.js"></script>
+<script>build1To100Test()</script>
 </body>
 </html>
 
