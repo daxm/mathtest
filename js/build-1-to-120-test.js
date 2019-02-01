@@ -46,7 +46,7 @@ function htmlListMathProblems(theArray) {
     else {
         theText = theArray[0] + " + " + theArray[1];
     }
-    theText +=  + " = _____";
+    theText +=  " = _____";
     let htmlText = document.createTextNode(theText);
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
