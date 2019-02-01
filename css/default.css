@@ -38,12 +38,12 @@ div#test-1-to-120 {
 div.math-problem {
   margin: 10px 5px 10px 5px;
   display: inline-flex;
-  min-width: 20%;
+  min-width: 30%;
   max-width: 100%;
 }
 
 div.problem {
   margin: 0 2px 0 2px;
-  font-size: 1em;
+  font-size: 1.5em;
   white-space: nowrap;
 }
