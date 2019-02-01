@@ -2,8 +2,9 @@ var numberList = [];
 var i = 1;
 for (i; i <= 120; i++) {
     numberList.push(i);
-    console.log(i);
 }
 
-console.log(numberList);
-console.log("I am here");
+while (numberList.length > 0) {
+    var aNumber = numberList.splice(0,1);
+    console.log(numberList);
+}
