@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    build1To120Test();
+} );
+
 function build1To120Test() {
     let numberList = [];
     for (let i = 1; i <= 120; i++) {
@@ -13,8 +17,9 @@ function build1To120Test() {
             aRandomPosition = 0;
         }
         let aNumber = numberList.splice(aRandomPosition,1);
-        let theSummedNumbers = get2NumberSum(aNumber);
-        console.log(theSummedNumbers)
+        let the3Numbers = get2NumberSum(aNumber);
+        the3Numbers.push(aNumber);
+        htmlListMathProblems(the3Numbers)
     }
 }
 
@@ -32,4 +37,17 @@ function get2NumberSum (theTotal) {
     return [aRandomDigit, theDifference]
 }
 
-build1To120Test();
+function htmlListMathProblems(theArray) {
+    let toc = document.getElementById("test-1-to-120");
+    let htmlText = theArray[0] + " + " + theArray[1] + " = " + theArray[2];
+    let div = documentRef.createElement( "div" );
+    div.appendChild( htmlText );
+    toc.appendChild( div );
+}
+
+try {
+    module.exports = htmlListMathProblems();
+} catch (e) {
+    // module.exports is not defined
+}
+
