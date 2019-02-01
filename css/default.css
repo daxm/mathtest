@@ -40,7 +40,7 @@ div.math-problem {
   font-size: 3em;
   display: inline-flex;
   justify-content: space-around;
-  min-width: 24%;
+  min-width: 30%;
   max-width: 49%;
   white-space: nowrap;
 }
