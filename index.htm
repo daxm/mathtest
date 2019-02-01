@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>Make Math Test</TITLE>
+	<STYLE TYPE="text/css">
+        <!--
+		body 	{ 
+				font-size: 10pt; 
+				font-family: Verdana, Arial, sans-serif;				
+				}		
+		td 	{ 
+				font-size: 10pt; 
+				font-family: Verdana, Arial, sans-serif;
+				}
+		b 	{ 
+				font-style: bold;
+				font-size: 10pt; 
+				font-family: Verdana, Arial, sans-serif;
+				}	
+		p 	{ 
+				font-size: 10pt; 
+				font-family: Verdana, Arial, sans-serif;
+				}								
+		h1 {
+				font-size: 22pt; 
+				font-style: bold;
+				font-family: Verdana, Arial, sans-serif;				
+				}				
+		h2 {
+				font-size: 18pt; 
+				font-style: bold;
+				font-family: Verdana, Arial, sans-serif;				
+				}
+		h3 {
+				font-size: 16pt; 
+				font-style: bold;
+				font-family: Verdana, Arial, sans-serif;				
+				}				
+        -->
+</STYLE>	
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<H1>Make Math Test</H1>
+
+
+<FORM ACTION="showtest.php" METHOD="get">
+
+Test Title: <INPUT TYPE="text" NAME="test_title" VALUE="Math Practice" SIZE="35">
+<P>
+Rows: <INPUT TYPE="text" NAME="rows_to_add" VALUE="5" SIZE="2">&nbsp;&nbsp;&nbsp;&nbsp;
+Columns: <INPUT TYPE="text" NAME="cols_to_add" VALUE="10" SIZE="2">&nbsp;&nbsp;&nbsp;&nbsp;
+Font size: <INPUT TYPE="text" NAME="font_size" VALUE="13" SIZE="2"><BR>
+<P>
+
+<TABLE CELLSPACING="10">
+<TR>
+<TD VALIGN="top">
+Max Top Integer: <BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="10">10<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="20">20<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="30">30<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="40">40<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="50">50<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="60">60<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="70">70<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="80">80<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="90">90<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="100" checked>100<BR>
+<INPUT TYPE="radio" NAME="top_integer" VALUE="1000">1000<BR>
+</TD>
+<TD VALIGN="top">
+Max Bottom Integer: <BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="10" checked>10<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="20">20<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="30">30<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="40">40<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="50">50<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="60">60<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="70">70<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="80">80<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="90">90<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="100">100<BR>
+<INPUT TYPE="radio" NAME="bottom_integer" VALUE="1000">1000<BR>
+</TD>
+<TD VALIGN="top">
+Operator: <BR>
+<INPUT TYPE="radio" NAME="operator" VALUE="+">+<BR>
+<INPUT TYPE="radio" NAME="operator" VALUE="-" checked>-<BR>
+<INPUT TYPE="radio" NAME="operator" VALUE="x">x<BR>
+<INPUT TYPE="radio" NAME="operator" VALUE="/">&divide<BR>
+<P>
+Allow Bottom Integer<BR>to be larger than Top: <BR>
+<INPUT TYPE="radio" NAME="allow_neg" VALUE="1">Yes<BR>
+<INPUT TYPE="radio" NAME="allow_neg" VALUE="0" checked>No<BR>
+</TD>
+</TR>
+</TABLE>
+
+<P>
+
+<INPUT TYPE="submit" VALUE="Make Test">
+</FORM>
+
+<P>
+
+<HR>
+
+<P>
+<H3>Notes about "Make Math Test"</H3>
+
+Adjust the rows, cols, and font size for whatever looks best on your printer. When doing division problems, set the cols equal to 5 or so to leave room for kids to write the answers.
+<P>
+Once on the test page, hit your browser's Reload or Refresh button to generate a new test with the same options. 
+<P>
+The formatting for division ("/") is still a touch strange. Try decreasing font sizes and set the cols equal to 5 or so.  Unfortunately, I have no knowledge of, nor control over, your browser or print settings.  Play with it to find out what works on your computer.
+<P>
+Hope it's useful.
+<P>
+-- Temsha and daxm
+<P>
+
+
+<!--Other things I might get around to: 
+<UL>
+	<LI>Fixing that "/" formatting thing (in progress)
+	<LI>Someone suggested I make the division problems use the division symbol instead of, well, what it looks like now.  I laughed at him.  It's a pain just to get HTML do do what it is already doing; a division symbol that looks OK with many font sizes and different sizes of numbers would be a royal flaming agony.  Plain HTML just doesn't *do* math symbols.  Perhaps I shall consider it some sort of twisted challenge. 
+	<LI>HA!  I laugh at you lack of knowing the HTML for mathematical symbols!  I fixed it where the webmisteress could not!
+	<LI>Updated code for post-"Global Variables" php and redid "allow_neg" logic test.
+</UL>-->
+
+</BODY>
+</HTML>
+
