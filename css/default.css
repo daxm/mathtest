@@ -39,5 +39,5 @@ div.math-problem {
   margin: 5px 0 5px 0;
   font-size: 3em;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
 }
