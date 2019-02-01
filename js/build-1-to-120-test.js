@@ -39,14 +39,15 @@ function get2NumberSum (theTotal) {
 function htmlListMathProblems(theArray) {
     let toc = document.getElementById("test-1-to-120");
     let flipOrder = Math.round(Math.random());
-    let htmlText = "";
+    let theText = "";
     if (flipOrder > 0) {
-        htmlText = document.createTextNode(theArray[1] + " + " + theArray[0]);
+        theText = theArray[1] + " + " + theArray[0];
     }
     else {
-        htmlText = document.createTextNode(theArray[0] + " + " + theArray[1]);
+        theText = theArray[0] + " + " + theArray[1];
     }
-    htmlText +=  + " = _____";
+    theText +=  + " = _____";
+    let htmlText = document.createTextNode(theText);
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
     div.appendChild(htmlText);
