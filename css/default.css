@@ -36,8 +36,8 @@ div#test-1-to-120 {
 }
 
 div.math-problem {
-  margin: 5px 0 5px 0;
+  margin: 5px 5px 5px 5px;
   font-size: 3em;
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
