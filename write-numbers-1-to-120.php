@@ -14,6 +14,7 @@
 <section>
  <h1>1 to 120 Challenge</h1>
 
+  <div class="test-1-to-120"></div>
 </section>
 
 <footer>
