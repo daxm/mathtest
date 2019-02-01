@@ -7,7 +7,7 @@ function build1To120Test() {
 
     while (numberList.length > 0) {
         if (numberList.length > 1) {
-            let aRandomPosition = Math.floor(Math.random() * numberList.length) + 1;
+            var aRandomPosition = Math.floor(Math.random() * numberList.length) + 1;
         }
         else {
             aRandomPosition = 0;
