@@ -40,7 +40,7 @@ function get2NumberSum (theTotal) {
 function htmlListMathProblems(theArray) {
     let toc = document.getElementById("test-1-to-120");
     let htmlText = theArray[0] + " + " + theArray[1] + " = " + theArray[2];
-    let div = documentRef.createElement( "div" );
+    let div = document.createElement( "div" );
     div.appendChild( htmlText );
     toc.appendChild( div );
 }
