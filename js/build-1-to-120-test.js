@@ -1,5 +1,5 @@
 function build1To120Test() {
-    var numberList = [];
+    let numberList = [];
     for (let i = 1; i <= 120; i++) {
         numberList.push(i);
     }
@@ -11,7 +11,7 @@ function build1To120Test() {
         else {
             aRandomPosition = 0;
         }
-        var aNumber = numberList.splice(aRandomPosition,1);
+        let aNumber = numberList.splice(aRandomPosition,1);
         console.log(aNumber);
     }
 }
