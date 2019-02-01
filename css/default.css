@@ -38,7 +38,7 @@ div#test-1-to-120 {
 div.math-problem {
   margin: 5px 0 5px 0;
   font-size: 3em;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   width: 49%;
 }
