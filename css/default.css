@@ -39,7 +39,7 @@ div.math-problem {
   margin: 10px 5px 10px 5px;
   display: inline-flex;
   min-width: 24%;
-  max-width: 49%;
+  max-width: 100%;
 }
 
 div.problem {
