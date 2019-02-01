@@ -70,15 +70,10 @@ function htmlListMathProblems(theArray) {
 
     let theAnswer = document.createTextNode(" = ____");
 
-
     // glue them together
     divMaster.appendChild(leftNum);
-    toc.appendChild(div);
     divMaster.appendChild(plus);
-    toc.appendChild(div);
     divMaster.appendChild(rightNum);
-    toc.appendChild(div);
     divMaster.appendChild(theAnswer);
-    toc.appendChild(div);
-    toc.appendChild(div);
+    toc.appendChild(divMaster);
 }
