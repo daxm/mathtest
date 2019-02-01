@@ -38,21 +38,47 @@ function get2NumberSum (theTotal) {
 
 function htmlListMathProblems(theArray) {
     let toc = document.getElementById("test-1-to-120");
+
+    // Create divs... 1 master and 1 for each section of the problem.
+    let divMaster = document.createElement( "div" );
+    divMaster.classList.add('math-problem');
+    let divLeft = document.createElement( "div" );
+    divLeft.classList.add('problem');
+    let divRight = document.createElement( "div" );
+    divRight.classList.add('problem');
+    let divPlus = document.createElement( "div" );
+    divPlus.classList.add('problem');
+    let divAnswer = document.createElement( "div" );
+    divAnswer.classList.add('problem');
+
+    let plusSymbol = "+";
+    let plus = document.createTextNode(plusSymbol);
+
+    let numLeft = "";
+    let numRight = "";
     let flipOrder = Math.round(Math.random());
-    let theText = "";
     if (flipOrder > 0) {
-        theText = theArray[1] + " + " + theArray[0];
+        numLeft = theArray[0];
+        numRight = theArray[1];
     }
     else {
-        theText = theArray[0] + " + " + theArray[1];
+        numLeft = theArray[1];
+        numRight = theArray[0];
     }
-    theText +=  " = ____";
-    while ((15 - theText.length) > 0) {
-        theText = '\xa0' + theText;
-    }
-    let htmlText = document.createTextNode(theText);
-    let div = document.createElement( "div" );
-    div.classList.add('math-problem');
-    div.appendChild(htmlText);
+    let leftNum = document.createTextNode(numLeft);
+    let rightNum = document.createTextNode(numRight);
+
+    let theAnswer = document.createTextNode(" = ____");
+
+
+    // glue them together
+    divMaster.appendChild(leftNum);
+    toc.appendChild(div);
+    divMaster.appendChild(plus);
+    toc.appendChild(div);
+    divMaster.appendChild(rightNum);
+    toc.appendChild(div);
+    divMaster.appendChild(theAnswer);
+    toc.appendChild(div);
     toc.appendChild(div);
 }
