@@ -43,6 +43,7 @@ div.math-problem {
 }
 
 div.problem {
+  margin: 0 2px 0 2px;
   font-size: 1em;
   white-space: nowrap;
 }
