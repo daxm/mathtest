@@ -35,4 +35,5 @@ div.math-problem {
   margin: 5px 5px 5px 5px;
   font-size: x-large;
   font-weight: bold;
+  display: inline-flex;
 }
