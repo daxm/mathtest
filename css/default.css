@@ -35,6 +35,6 @@ div.math-problem {
   margin: 5px 10px 5px 10px;
   font-size: x-large;
   font-weight: bold;
-  display: inline-flex;
+  display: inline-block;
   text-align: right;
 }
