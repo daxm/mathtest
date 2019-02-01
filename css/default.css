@@ -32,11 +32,9 @@ h3 {
 }
 
 div.math-problem {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 5px 10px 5px 10px;
   font-size: x-large;
   font-weight: bold;
   display: inline-flex;
+  align-content: space-evenly;
 }
