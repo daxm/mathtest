@@ -59,7 +59,7 @@ if($_GET[operator] == "/") {
 			print("$_GET[operator]");
 			print("</td><td width='30' align='right' valign='bottom'>");
 			print("$bottom_num");
-			print("</td></tr><tr><td COLSPAN='2' align='right'><IMG SRC='black40x2.gif' width='40' HEIGHT='2' ALT='' border='0'><P>&nbsp;<P></td></tr>");
+			print("</td></tr><tr><td COLSPAN='2' align='right'><IMG SRC='images/black40x2.gif' width='40' HEIGHT='2' ALT='' border='0'><P>&nbsp;<P></td></tr>");
 			print("</table></td>");
 			$cols_added++;
 			}

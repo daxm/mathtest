@@ -12,11 +12,8 @@
 </header>
 
 <section>
-  <h1>Choose a Math Test</h1>
-  <ul>
-    <li><a href="generic-4-function-test.html">A general 4 function test.</a></li>
-    <li>A special test to prove a student can write all numbers 1-120.</li>
-  </ul>
+ <h1>1 to 120 Challenge</h1>
+
 </section>
 
 <footer>
