@@ -21,8 +21,8 @@
 </footer>
 
 <!-- load all our scripts -->
-<script type="text/javascript" src="default.js"></script>
-<script>build1To100Test()</script>
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript" src="js/build-1-to-120-test.js"></script>
 </body>
 </html>
 

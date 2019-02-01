@@ -75,6 +75,6 @@ if($_GET[operator] == "/") {
 </footer>
 
 <!-- load all our scripts -->
-<script type="text/javascript" src="default.js"></script>
+<script type="text/javascript" src="js/default.js"></script>
 </body>
 </html>
