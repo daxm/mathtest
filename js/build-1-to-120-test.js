@@ -11,7 +11,7 @@ function build1To120Test() {
         else {
             aRandomPosition = 0;
         }
-        let aNumber = numberList.splice(aRandomPosition,1) + 1;
+        var aNumber = numberList.splice(aRandomPosition,1) + 1;
         console.log(aNumber);
     }
 }
