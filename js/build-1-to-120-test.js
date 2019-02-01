@@ -52,6 +52,7 @@ function htmlListMathProblems(theArray) {
             theText += "&nbsp;"
         }
     }
+    console.log(theText.length);
     let htmlText = document.createTextNode(theText);
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
