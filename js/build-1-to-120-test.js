@@ -12,8 +12,15 @@ function build1To120Test() {
             aRandomPosition = 0;
         }
         let aNumber = numberList.splice(aRandomPosition,1);
-        console.log(aNumber);
+        console.log(get2NumberSum(aNumber) + "=" + aNumber);
     }
+}
+
+function get2NumberSum (theTotal) {
+    // What 2 numbers sum to theTotal without using carrying.
+    var aRandomDigit = Math.floor(Math.random() * (10));
+    var theDifference = 10 - aRandomDigit;
+    return [aRandomDigit, theDifference]
 }
 
 build1To120Test();
