@@ -1,7 +1,6 @@
 function build1To120Test() {
-    let numberList = [];
-    let i = 1;
-    for (i; i <= 120; i++) {
+    var numberList = [];
+    for (let i = 1; i <= 120; i++) {
         numberList.push(i);
     }
 
