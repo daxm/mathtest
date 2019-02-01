@@ -47,6 +47,11 @@ function htmlListMathProblems(theArray) {
         theText = theArray[0] + " + " + theArray[1];
     }
     theText +=  " = _____";
+    if (theText.length < 17) {
+        for (let j = 1; j <= (17 - theText); j++) {
+            theText += "&nbsp;"
+        }
+    }
     let htmlText = document.createTextNode(theText);
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
