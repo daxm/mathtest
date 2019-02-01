@@ -41,11 +41,12 @@ function htmlListMathProblems(theArray) {
     let flipOrder = Math.round(Math.random());
     let htmlText = "";
     if (flipOrder > 0) {
-        htmlText = document.createTextNode(theArray[1] + " + " + theArray[0] + " = _____");
+        htmlText = document.createTextNode(theArray[1] + " + " + theArray[0]);
     }
     else {
-        htmlText = document.createTextNode(theArray[0] + " + " + theArray[1] + " = _____");
+        htmlText = document.createTextNode(theArray[0] + " + " + theArray[1]);
     }
+    htmlText +=  + " = _____";
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
     div.appendChild(htmlText);
