@@ -44,10 +44,9 @@ div.math-problem {
 }
 
 div.problem {
-  margin: 0 0 0 0;
   font-size: 3em;
   max-width: 24%;
   white-space: nowrap;
   text-align: justify-all;
-  display: inline;
+  display: block;
 }
