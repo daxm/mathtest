@@ -47,6 +47,9 @@ function htmlListMathProblems(theArray) {
         theText = theArray[0] + " + " + theArray[1];
     }
     theText +=  " = ____";
+    while ((15 - theText.length) > 0) {
+        theText = '\xa0' + theText;
+    }
     let htmlText = document.createTextNode(theText);
     let div = document.createElement( "div" );
     div.classList.add('math-problem');
