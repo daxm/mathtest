@@ -16,3 +16,5 @@ function build1To120Test() {
         console.log(numberList);
     }
 }
+
+build1To120Test();
