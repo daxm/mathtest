@@ -47,5 +47,5 @@ div.problem {
   max-width: 24%;
   white-space: nowrap;
   text-align: justify-all;
-  display: block;
+  display: inline-block;
 }
