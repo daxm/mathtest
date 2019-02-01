@@ -38,6 +38,6 @@ div#test-1-to-120 {
 div.math-problem {
   margin: 5px 0 5px 0;
   font-size: 5em;
-  display: block;
+  display: inline-flex;
   width: 40%;
 }
