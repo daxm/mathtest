@@ -5,38 +5,34 @@ body 	{
 
 td 	{
   font-size: 10pt;
-  font-family: Verdana, Arial, sans-serif;
 }
 
 b 	{
-  font-style: bold;
+  font-weight: bold;
   font-size: 10pt;
-  font-family: Verdana, Arial, sans-serif;
 }
 
 p 	{
   font-size: 10pt;
-  font-family: Verdana, Arial, sans-serif;
 }
 
 h1 {
   font-size: 22pt;
-  font-style: bold;
-  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 18pt;
-  font-style: bold;
-  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 16pt;
-  font-style: bold;
-  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
 }
 
 div.math-problem {
   margin-left: 5px;
+  font-size: x-large;
+  font-weight: bold;
 }
